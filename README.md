@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+Project 3
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dylan A. Russo Cohort 12-B
 
-## Available Scripts
 
-In the project directory, you can run:
+This project is a basic website to help anyone keep themselves organized when needing to use a to-do list. It is easy to navigate through and the consumer using the website will have no issues understanding how to use it. Many people will use this website for grocery shopping, basic to-do lists, students with their homework, teachers with their daily planning, etc. 
 
-### `yarn start`
+This website will have three different view tabs. The first one will be the to-do list page, the second tab will be a way to contact the website creater with feedback and the third tab will be an "about us" tab. With a simple click you will be able to switch between tabs. On the to-do list tab, you will be able to create your list for whatever you need it for at that moment which will provide you with the option to check off your completed task and also delete the task if it was not needed. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Technologies used 
+HTML, CSS, README.md, JavaScript, Bootstrap, ReactJS
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+In the future I want to improve the website in many different ways
+1. Have a more advanced to-do list for extention features
+2. Make the website more attractive to the eye with a better design
+3. Upgrade the website based on user feedback
 
-### `yarn test`
+User Stories
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. As a consumer , I want to be able to use the to-do list to help me go food shoping and make my list and check off each item I need when I put it into my cart
 
-### `yarn build`
+2. As a web developer, I need to make a list of what the client is looking for in their website that we are trying to build so using the to-do list can help me make sure I hit each point to make sure the customer is happy with the result.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. As a student , I will use the to-do list for my assignments and it will give me the easy way to make sure all my work is done on time.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Wireframes 
+https://wireframepro.mockflow.com/view/Ma1a46941bd8af2331afba9e2072a97961606073310389#/page/Dd2fa9a079a2682af159a666a300242c1
