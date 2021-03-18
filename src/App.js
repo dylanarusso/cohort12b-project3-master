@@ -12,11 +12,6 @@ import Todo from "./todo";
 import Contact from "./contact";
 import AboutUs from "./aboutus";
 
-function Home() {
-  return(
-      <h1>This is the home page</h1>
-  )
-}
 
 function App() {
   return (

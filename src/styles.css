@@ -1,0 +1,32 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /*Contact Us Page*/
+
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-template-rows: 10% 1fr 1fr 10%;
+    border: solid 3px black;
+  }
+  .outerFormContainer {
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    grid-gap: 200px;
+    background-color: rgba(59, 130, 246);
+    border: solid 3px black;
+  }
+  .header {
+      font-size: 75px;
+      color:white;
+      display: flexbox;
+      position: relative;
+      font: bold;
+      text-align: center;
+  }

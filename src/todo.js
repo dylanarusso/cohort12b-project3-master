@@ -1,13 +1,10 @@
 import React, {useState, useEffect} from 'react';
 
 function Todo(props) {
+    
+
     return (
         <div>
-
-            {/*<div className="grid grid-cols-2">*/}
-
-
-            {/*</div>*/}
 
             <div className={'border p-6'}>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
@@ -39,4 +36,6 @@ function Todo(props) {
     );
 }
 
+
 export default Todo;
+
