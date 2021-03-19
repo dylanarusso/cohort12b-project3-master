@@ -49,7 +49,7 @@ function Todo() {
         placeholder="Add todo here!"
       />
       <button className="add-btn" onClick={AddTask}>
-        Add
+        Add Task
       </button>
       <br />
       {tasklist !== [] ? (
