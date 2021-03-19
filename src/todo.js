@@ -1,41 +1,78 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState } from "react";
 
-function Todo(props) {
-    
+function Todo() {
+  const [task, setTask] = useState("");
+  const [tasklist, setTaskList] = useState([]);
 
-    return (
-        <div>
+  const handleChange = (e) => {
+    setTask(e.target.value);
+  };
 
-            <div className={'border p-6'}>
-                <div style={{display: 'flex', justifyContent: 'center'}}>
-                    <input type="text" className={'border'}/>
-                    &nbsp;<span className={'p-2 border bg-blue-600 rounded pr-3 pl-3 text-white'}>Submit</span>
+  const AddTask = () => {
+    if (task !== "") {
+      const taskDetails = {
+        id: Math.floor(Math.random() * 1000),
+        value: task,
+        isCompleted: false,
+      };
 
-                </div>
+      setTaskList([...tasklist, taskDetails]);
+    }
+  };
 
-                <div className={'p-5'}>
+  const deletetask = (e, id) => {
+    e.preventDefault();
+    setTaskList(tasklist.filter((t) => t.id != id));
+  };
 
-                    <div className={'bg-gray-100 p-2 rounded'}>
-                        <ul>
-                            <li className={' border-b-2 border-cool-gray-200 p-1'}>
-                                <input type="checkbox"/>&nbsp;&nbsp;
-                                <span className={'text-gray-700 font-semibold text-sm'}>some item</span>
-                                <i className={'fa fa-trash text-red-400 float-right'} />
-                            </li>
-                        </ul>
-                    </div>
+  const taskCompleted = (e, id) => {
+    e.preventDefault();
+    const element = tasklist.findIndex((elem) => elem.id == id);
 
-                </div>
+    const newTaskList = [...tasklist];
 
-            </div>
+    newTaskList[element] = {
+      ...newTaskList[element],
+      isCompleted: true,
+    };
 
+    setTaskList(newTaskList);
+  };
 
+  return (
+    <div className="todo">
+      <input
+        type="text"
+        name="text"
+        id="text"
+        onChange={(e) => handleChange(e)}
+        placeholder="Add todo here!"
+      />
+      <button className="add-btn" onClick={AddTask}>
+        Add
+      </button>
+      <br />
+      {tasklist !== [] ? (
+        <ul>
+          {tasklist.map((t) => (
+            <li className={t.isCompleted ? "crossText" : "listitem"}>
+              {t.value}
+              <button
+                className="completed"
+                onClick={(e) => taskCompleted(e, t.id)}
+              >
+                Completed
+              </button>
 
-
-        </div>
-    );
+              <button className="delete" onClick={(e) => deletetask(e, t.id)}>
+                Delete
+              </button>
+            </li>
+          ))}
+        </ul>
+      ) : null}
+    </div>
+  );
 }
 
-
 export default Todo;
-
