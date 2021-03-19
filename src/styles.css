@@ -40,7 +40,7 @@
   
   .todo .crossText {
     text-decoration: line-through;
-    color: red;
+    color: green;
   }
   
   .todo input {
